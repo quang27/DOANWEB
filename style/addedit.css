@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'poppins',sans-serif;
+    }
+    #gia_ban::-webkit-inner-spin-button,
+    #gia_ban::-webkit-outer-spin-button,
+    #gia_nhap::-webkit-inner-spin-button,
+    #gia_nhap::-webkit-outer-spin-button,
+    #soluong_ton::-webkit-inner-spin-button,
+    #soluong_ton::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 0;
+    }
+    input:-webkit-autofill,
+            input:-webkit-autofill:hover,
+            input:-webkit-autofill:focus,
+            input:-webkit-autofill:active {
+                transition: background-color 5000s ease-in-out 0s;
+                -webkit-text-fill-color: #fff !important;
+            }
+    #modal-container{
+    width: 100%;
+    height: 150vh;
+    position: fixed;
+    background: linear-gradient(120deg,#2980b9, #8e44ad);
+    top: 0;
+    left: 0;
+    }
+    .modal{
+    position: relative;
+    background: rgba(29, 43, 58, 0.25);
+    backdrop-filter: blur(15px);
+    max-width: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+    transition: all 0.5s ease-in-out;
+    border: 3px solid #00dfc4;
+    border-radius: 30px;
+    }
+    #modal-container.modal-show .modal{
+    top: 20px;
+    }
+    #modal-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 223, 196, 0.3);
+    }
+    #modal-header h3{
+    margin: 0 auto;
+    color: #fff;
+    width: 100%;
+    margin-left: 25px;
+    font-size: 30px;
+    text-align: center;
+    }
+    #btn-modal-close{
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #00dfc4;
+    width: 30px;
+    margin-top: 0;
+    }
+    #modal-body{
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;  
+    }
+    .inputbox input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.5s;
+    }
+    .inputbox:nth-child(2),
+    .inputbox:nth-child(4),
+    .inputbox:nth-child(6)
+    {
+    width: 48%;
+    margin-right: 16px;
+    display: inline-block;
+    }
+    .inputbox:nth-child(3),
+    .inputbox:nth-child(5),
+    .inputbox:nth-child(7)
+    {
+    width: 48%;
+    display: inline-block;
+    }
+    .inputbox span{
+    position: absolute;
+    left: 0;
+    top:0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+    }
+    .inputbox input:valid ~ span,
+    .inputbox input:focus ~ span{
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.3em;
+    }
+    .inputbox input:valid,
+    .inputbox input:focus{
+    border: 1px solid #00dfc4;
+    }
+    .btn-submit{
+    margin-top: 30px;
+    background: #00dfc4;
+    border: none;
+    outline: none;
+    color: (255, 255, 255, 0.25);
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    }
+    select{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        background: #1d2b3a;
+        border-radius: 5px;
+        outline: none;
+        color: #fff;
+        font-size: 1em;
+        transition: 0.5s;
+    }
+    .inputbox select:valid ~ span,
+    .inputbox select:focus ~ span{
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.3em;
+    }
+    .inputbox select:valid,
+    .inputbox select:focus{
+    border: 1px solid #00dfc4;
+    }
